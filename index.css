@@ -47,9 +47,8 @@ div{
 }
 #username{
   font-size: 14px;
-   padding: 0.4em 0.3em;
+   padding: 0.6em 0.3em;
   width: 100%;
-  height: auto;
   color: black;
   border: none;
   outline: 1px solid lightgray;
@@ -57,9 +56,8 @@ div{
 }
 #password{
   font-size: 14px;
-   padding: 0.4em 0.3em;
+  padding: 0.6em 0.3em;
   width: 100%;
-  height: auto;
   color: black;
   border: none;
   outline: 1px solid lightgray;
@@ -68,17 +66,18 @@ div{
 
 .login_btn{
   font-size: 16px;
-  padding: 0.2em 0.2em;
+  padding: 0.5em 0.2em;
   background-color: rgb(18, 221, 221);
   border: none;
   border-radius: 15px;
   color: white;
+  width: 60%;
   
 }
 
 .register{
   font-size: 16px;
-  padding: 0.2em 0.2em;
+  padding: 0.5em 0.2em;
   background-color: orange;
   border: none;
   border-radius: 15px;
