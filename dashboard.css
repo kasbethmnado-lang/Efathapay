@@ -112,6 +112,7 @@ div.category{
     max-width: 600px;
     margin: 0;
     height: 100vh;
+    box-shadow: none;
   }
   .content{
     display: grid;
