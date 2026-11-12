@@ -64,6 +64,10 @@ div{
   border-radius: 5px;
 }
 
+.buttons{
+  display: flex;
+  justify-content: space-around;
+}
 .login_btn{
   font-size: 16px;
   padding: 0.5em 0.2em;
@@ -71,7 +75,8 @@ div{
   border: none;
   border-radius: 15px;
   color: white;
-  width: 60%;
+  width: 40%;
+  
   
 }
 
@@ -81,6 +86,9 @@ div{
   background-color: orange;
   border: none;
   border-radius: 15px;
+  width: 40%;
+  
+
 }
 
 form{
