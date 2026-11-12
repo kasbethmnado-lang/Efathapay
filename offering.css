@@ -65,16 +65,11 @@ table{
 }
 
 @media screen and (max-width: 768px){
-  div.offering{
-    width: 100%;
-    max-width: 600px;
-    
-  }
+
   form{
     width: 100%;
     max-width: 600px;
-    height: 100%;
-  
     
+   
   }
 }
