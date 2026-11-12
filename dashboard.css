@@ -23,7 +23,7 @@ div{
   outline: 1px solid #ddd;
   box-shadow: 0 0 5px black;
   width: 100%;
-  max-width: 600px;
+  max-width: fit-content;
   margin: auto;
   height: auto;
   padding: 0;
@@ -57,7 +57,7 @@ div{
 
 
 
-.content a{
+.content  a{
   color: black;
   text-decoration: none;
   padding: 0.3em;
@@ -71,9 +71,22 @@ div{
   justify-content: center;
   
 }
+div.category{
+    color: black;
+  text-decoration: none;
+  padding: 0.3em;
+  width: 100%;
+  border-radius: 5px;
+  max-width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .content a:hover{
-  background-color: red;
-  color: white;
+  /*background-color: red;*/
+  box-shadow: 0 2px 4px gray;
+  color: black;
 }
 /*
 .content a:active{
@@ -91,4 +104,18 @@ div{
 
 .footer{
   display: none;
+}
+
+@media screen and (max-width: 768px){
+  .container{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    height: 100vh;
+  }
+  .content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+  }
+
 }
