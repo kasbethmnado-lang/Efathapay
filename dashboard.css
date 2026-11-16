@@ -10,9 +10,8 @@ body{
   background-color: white;
   color: black;
   display: flex;
-  height: 100vh;
-  
-  
+  height: 100%;
+  width: 100%;
   
 }
 div{
@@ -23,15 +22,13 @@ div{
   outline: 1px solid #ddd;
   box-shadow: 0 0 5px black;
   width: 100%;
-  max-width: fit-content;
+  max-width: 400px;
   margin: auto;
-  height: auto;
+  height: 100dvh;
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
   
   
-  
-
 }
 
 .header{
@@ -119,7 +116,7 @@ div.category{
   }
   .content{
     display: grid;
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
