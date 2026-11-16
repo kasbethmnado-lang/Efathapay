@@ -5,7 +5,13 @@
 
 }
 
+
 div.offering{
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 600px;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,13 +74,14 @@ table{
   div.offering{
     width: 100%;
     max-width: 600px;
-    height: 100vh;
-    
+    height: 100%;  
   }
   form{
     width: 100%;
-    max-width: 600px;
-    
-   
+    max-width: 600px; 
+    height: 100%;
+    max-height: 600px;  
   }
 }
+
+
