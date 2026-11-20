@@ -187,7 +187,14 @@ form{
   }
   .container{
     width: 100%;
-    max-width: 250px;
+    max-width: 400px;
+    height: 100%;
+   
     margin: auto;
+  }
+  .reg_container{
+    width: 100%;
+    max-width: 400px;
+    
   }
 }
