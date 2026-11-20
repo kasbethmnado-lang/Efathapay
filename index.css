@@ -8,6 +8,10 @@ body{
   width: 100vw;
   height: 100vh;
   display: flex;
+  background-image: url("Apostle_Mwingira.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
  
   
   
@@ -20,7 +24,7 @@ body{
   max-width: 250px;
   height: 100%;
   max-height: fit-content;
-  background-color: dodgerblue;
+  background-color: rgb(53, 154, 255, 0.7);
   margin: auto;
   
 }
@@ -31,14 +35,14 @@ body{
   align-items: center;
   width: 100%;
   height: auto;
-  background-color: dodgerblue;
+  background-color:  rgb(53, 154, 255, 0.7);
   
   
 }
 
 .login{
   padding: 0.6em;
-  background-color: white;
+  background-color: rgb(248, 245, 245, 0.7);
   display: flex ;
   flex-direction: column;
   
@@ -109,7 +113,7 @@ form{
   max-width: 250px;
   height: 100%;
   max-height: fit-content;
-  background-color: white;
+  background-color: rgb(248, 245, 245, 0.7);
   
   
 }
@@ -148,4 +152,17 @@ form{
   color: white;
   margin: 10px auto;
   
+}
+
+@media screen and (max-width: 768px){
+  .container{
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+    
+  }
+  .reg_container{
+    width: 100%;
+    max-width: 400px;
+  }
 }
