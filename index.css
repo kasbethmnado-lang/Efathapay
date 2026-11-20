@@ -160,7 +160,7 @@ form{
   .container{
     width: 100vw;
     max-width: 400px;
-    margin: 15px;
+    margin: 40px 15px;
     
     
   }
@@ -187,14 +187,14 @@ form{
   }
   .container{
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     height: 100%;
    
     margin: auto;
   }
   .reg_container{
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     
   }
 }
