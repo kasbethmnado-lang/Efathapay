@@ -165,10 +165,10 @@ form{
     width: 100%;
     max-width: 400px;
   }
-  .login{
+  .login, form{
     gap: 5px;
   }
-  #username, #password, .login_btn, .register{
+  #username, #password, .login_btn, .register, #name, #reg_password, #reg_email, #conf_password, .reg_btn{
     padding: 0.6em;
   }
 
