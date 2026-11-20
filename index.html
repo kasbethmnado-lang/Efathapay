@@ -1,48 +1,175 @@
-<!DOCTYPE html>
-<html>
- 
-     <head>
-     <title>efatha payment system</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  padding: 0px;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  background-image: url("Apostle_Mwingira.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-attachment: fixed;
+  
+  
+}
+
+.container{
+  padding: 0.3em;
+  outline: 1px solid #ddd;
+  width: 100%;
+  max-width: 250px;
+  height: 100%;
+  max-height: fit-content;
+  background-color: rgb(53, 154, 255, 0.7);
+  margin: auto;
+  
+}
+
+.header{
+  padding: 0.3em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color:  rgb(53, 154, 255, 0.7);
+  
+  
+}
+
+.login{
+  padding: 0.6em;
+  background-color: rgb(248, 245, 245, 0.7);
+  display: flex ;
+  flex-direction: column;
+  
+  
+  
+}
+#username{
+  font-size: 14px;
+  padding: 0.4em 0.3em;
+  margin-top: 10px;
+  width: 100%;
+  color: black;
+  border: none;
+  outline: 1px solid lightgray;
+  border-radius: 5px;
+}
+#password{
+  font-size: 14px;
+  padding: 0.4em 0.3em;
+  width: 100%;
+  color: black;
+  border: none;
+  outline: 1px solid lightgray;
+  border-radius: 5px;
+}
+/*
+.buttons{
+  display: flex;
+  flex-direction: column;
+  
+
+}*/
+.login_btn{
+  font-size: 16px;
+  padding: 0.4em 0.2em;
+  background-color: rgb(18, 221, 221);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  width: 100%;
+  
+  
+}
+
+.register{
+  font-size: 16px;
+  padding: 0.4em 0.2em;
+  background-color: orange;
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+  margin-top: 10px;
+  
+
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.reg_container{
+   
+  padding: 0.3em;
+  outline: 1px solid #ddd;
+  width: 100%;
+  max-width: 250px;
+  height: 100%;
+  max-height: fit-content;
+  background-color: rgb(248, 245, 245, 0.7);
+  
+  
+}
+
+
+
+#name,#reg_email{
+  font-size: 14px;
+  padding: 0.4em 0.3em;
+  width: 100%;
+  height: auto;
+  color: black;
+  border: none;
+  outline: 1px solid lightgray;
+  border-radius: 5px;
+}
+#reg_password, #conf_password{
+  font-size: 14px;
+  padding: 0.4em 0.3em;
+  width: 100%;
+  height: auto;
+  color: black;
+  border: none;
+  outline: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.reg_btn{
+  width: 50%;
+  font-size: 14px;
+  padding: 0.4em 0.2em;
+  margin-top: 10px;
+  background-color: rgb(18, 221, 221);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  margin: 10px auto;
+  
+}
+
+@media screen and (max-width: 768px){
+  .container{
+    width: 100%;
+    max-width: 400px;
+    margin: 15px;
     
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  </head>
+  }
+  .reg_container{
+    width: 100%;
+    max-width: 400px;
+  }
+  .login, form{
+    gap: 5px;
+  }
+  #username, #password, .login_btn, .register, #name, #reg_password, #reg_email, #conf_password, .reg_btn{
+    padding: 0.6em;
+  }
 
-  <body>
-    <div class="container">
-      <div class="header">
-        <img src="efatha.png" class="logo" style="width: 50px; height: auto;">
-        <h1>Efathapay</h1>
-      </div>
-      <div class="login">
-        <p>welcome!</p>
-        <p style="color: dodgerblue">login to continue</p>
-
-        <form id="form">
-          <input type="email" id="username" placeholder="enter your email" required><br>
-          <input type="password" id="password" placeholder="enter password"><br>
-          
-          <p id="message"></p>
-
-          
-            <button type="submit" class="login_btn" id="login_btn" >login</button><br>
-         <p style="text-align: center; color: #bbb">Don't have an account?</p>
-         <button class="register" id="reg_now">register</button>
-          
-          
-        </form>
-
-      </div>
-
-    </div>
-
-    <script src="efatha.js"></script>
-  </body>
-</html>
-
-
-
-
+}
