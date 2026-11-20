@@ -158,11 +158,18 @@ form{
   .container{
     width: 100%;
     max-width: 400px;
-    margin: 10px;
+    margin: 15px;
     
   }
   .reg_container{
     width: 100%;
     max-width: 400px;
   }
+  .login{
+    gap: 5px;
+  }
+  #username, #password, .login_btn, .register{
+    padding: 0.6em;
+  }
+
 }
