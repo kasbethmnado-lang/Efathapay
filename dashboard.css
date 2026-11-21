@@ -16,15 +16,13 @@ body{
 }
 div{
   padding: 0.3em;
+  box-sizing: border-box;
 }
 
-.container{
-  outline: 1px solid #ddd;
-  box-shadow: 0 0 5px black;
+.container{ 
   width: 100%;
-  max-width: 400px;
   margin: auto;
-  height: 100dvh;
+  height: 100%;
   padding: 0;
   font-size: 16px;
   
@@ -99,11 +97,51 @@ div.category{
   padding: 0.3em;
   gap: 0.5em;
   
+  
 }
 
 .footer{
   display: none;
 }
+.wel_img > img{
+  width: 100%;
+  height: 100%;
+}
+
+.wel_txt{
+  width: 100%;
+  padding: 5px;
+}
+
+.welcome{
+  width: 100%;
+  max-width: 600px;
+  background-color: #2f4f4f;
+  padding: 0.3em;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+
+.column2{
+  outline: 1px solid lightgray;
+}
+.column2 p{
+  border-bottom: 1px solid gray;
+  margin-bottom: 10px;
+}
+.view{
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  gap: 10px;
+  
+}
+
+.view > *{
+  grid-column: col-start / span 12;
+  margin: 0;
+}
+
 
 @media screen and (max-width: 768px){
   .container{
@@ -116,7 +154,36 @@ div.category{
   }
   .content{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2,  1fr);
+  }
+  
+
+}
+
+@media screen and (min-width: 768px){
+  .content{
+    display: grid;
+    grid-template-columns: repeat(2,  1fr);
+    
   }
 
+  .view{
+    margin: 10px;
+    background-color:aliceblue
+    
+  }
+  .welcome{
+    grid-column: col-start 2 / span 5;
+    grid-row: 2;
+    border-radius: 0;
+
+  }
+
+  .column2{
+    grid-column: 7 / span 5;
+    grid-row: 2;
+    background-color: white;
+
+  }
+  
 }
