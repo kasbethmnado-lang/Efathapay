@@ -18,24 +18,33 @@ div.offering{
   
 }
 form{
-  border: 1px solid gray;
   padding: 0.3em;
   font-size: 14px;
   padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  gap: 10px;
+  
 }
 
 .input{
+  outline: 1px solid #ccc;
+  margin: 5px;
+  
   
 }
 
 .input > input{
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid gray;
+   padding: 0.2em;
 }
+
 
 input{
   border: none;
   width: 70%;
   padding: 0.1em;
+  
 }
 
 input:focus{
@@ -45,13 +54,14 @@ input:focus{
 }
 
 table,tr,th,td{
-  border: 1px solid green;
+  border: 1px solid gray;
   border-collapse: collapse;
   padding: 0.2em;
   
 }
 table{
   width: 100%;
+  text-align: center;
 }
 
 .sub_btn{
@@ -60,15 +70,21 @@ table{
  padding: 0.3em;
  background-color: #ddd;
  outline: 1px solid lightgray;
+ cursor: pointer;
 }
 
 .submit{
-  outline: 1px solid black;
+  outline: 1px solid gray;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 5px;
+  
  
 }
+
+
+
 
 @media screen and (max-width: 768px){
   div.offering{
@@ -80,8 +96,37 @@ table{
     width: 100%;
     max-width: 600px; 
     height: 100%;
-    max-height: 600px;  
+    
   }
+  .input{
+    grid-column: col-start / span 12;
+    grid-row: 1 / 4;
+  }
+  .table{
+    grid-column: col-start / span 12;
+    grid-row: 4 / 8;
+  }
+  .submit{
+    grid-column: col-start / span 12;
+    grid-row: 8 / 12;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .input{
+    grid-column: col-start 2 / span 5;
+    grid-row: 1 / 4;
+    padding: 30px 10px;
+  }
+  .table{
+    grid-column: col-start 7 / span 5;
+    grid-row: 1 / 2;
+  }
+  .submit{
+    grid-column: col-start 7 / span 5;
+    grid-row: 2 / 2 ;
+  }
+
 }
 
 
