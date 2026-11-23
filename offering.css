@@ -30,6 +30,8 @@ form{
 .input{
   outline: 1px solid #ccc;
   margin: 5px;
+  height: 100%;
+  max-height: 90vh;
   
   
 }
@@ -128,5 +130,6 @@ table{
   }
 
 }
+
 
 
