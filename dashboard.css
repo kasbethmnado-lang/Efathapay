@@ -13,18 +13,42 @@ body{
   height: 100%;
   width: 100%;
   
+  
 }
 div{
   padding: 0.3em;
   box-sizing: border-box;
 }
 
+
+/*  font-size  */
+h1{
+  font-size: clamp(2rem 3vw 3rem)
+}
+h2{
+  font-size: clamp(1.5rem 2.5vw 2.25rem)
+}
+
+h3{
+  font-size: clamp(1.25rem 2vw 1.75rem)
+}
+p{
+  font-size: clamp(1rem 1.1vw 1.125rem )
+}
+a{
+  font-size: clamp(1rem 1.1vw 1.125rem)
+}
+button {
+  font-size: clamp(1rem 1.1vw 1.125rem)
+}
+
+
 .container{ 
   width: 100%;
   margin: auto;
   height: 100%;
   padding: 0;
-  font-size: 16px;
+  
   
   
 }
@@ -128,7 +152,8 @@ div.category{
 }
 .column2 p{
   border-bottom: 1px solid lightgray;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  
 }
 .view{
   display: grid;
